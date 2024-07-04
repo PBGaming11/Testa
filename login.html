@@ -6,35 +6,38 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/css/login.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <script src='js/login.js' defer></script> <!-- defer ensures the script runs after the HTML is loaded -->
 </head>
 <body>
-    <form method="post">
-        <div class="imgcontainer">
-            <img src="img_avatar2.png" alt="Avatar" class="avatar">
-        </div>
-
-        <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input id="name" type="text" placeholder="Enter Username" name="uname" required>
-
-            <label for="psw"><b>Password</b></label>
-            <input id="pass" type="password" placeholder="Enter Password" name="psw" required>
-            <!--phim in an-->
-            <div>
-              <button id="login" type="submit" class="login">Login</button>
-            <button id="signin" type="button" class="signin">signin</button>
+    <div class="navabar">
+        <form method="post">
+            <div class="imgcontainer">
+                <a href="#" class="logo"><i class='bx bx-laptop'></i>DNDLap</a>
             </div>
-
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-        </div>
-
-        <div class="container" style="background-color:#f1f1f1">
-            <button id="cancelButton" type="button" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-    </form>
+    
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input id="name" type="text" placeholder="Enter Username" name="uname" class="input-button" required>
+    
+                <label for="psw"><b>Password</b></label>
+                <input id="pass" type="password" placeholder="Enter Password" name="psw" class="input-button" required>
+                <!--phim in an-->
+                <div>
+                  <button id="login" type="submit" class="login">Login</button>
+                <button id="signin" type="button" class="signin">signin</button>
+                </div>
+    
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+    
+            <div class="container" style="background-color:#f1f1f1">
+                <button id="cancelButton" type="button" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>>
 </body>
 </html>

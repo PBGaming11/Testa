@@ -1,0 +1,33 @@
+.cart{
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+
+}
+.hered-cart{
+    padding: 1.5rem;
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1px;
+}
+.cart-item{
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1px;
+}
+.product{
+    display: flex;
+    align-items: center;
+}
+.hered-cart:only-child{
+    width: 33.33%;
+}
+.cart-itemt:only-child{
+    width: 33.33%;
+}
