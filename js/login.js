@@ -16,3 +16,8 @@ document.getElementById('cancelButton').onclick = function() {
     document.getElementById('pass').value = '';
 
 };
+document.getElementById('signin').onclick = function() {
+    //chuyen trang
+    window.location.href = 'signin.html';
+
+};
