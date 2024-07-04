@@ -89,7 +89,7 @@ section{
     transition: background 0.5s;
 }
 .footer{
-    max-width: 968px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: grid;
