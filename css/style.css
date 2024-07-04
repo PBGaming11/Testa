@@ -164,17 +164,20 @@ section{
     min-height: 640px;
     display: flex;
     align-items: center;
-    background: url(PIC/background.jpg);
+    background: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     overflow: hidden;
 }
 .container img{
-    width: 400px;
+    width: 640px;
     position: absolute;
-    bottom: -500px;
     right: 200px;
+    padding: auto;
+    border-radius: 5%;
+    top: 0%;
+    
 }
 
 .home-text{
@@ -189,4 +192,52 @@ section{
     font-size: 2.4rem;
     font-weight: 700;
     margin-bottom: 1rem;
+}
+.btn{
+    padding: 0.6rem 1rem;
+    background: var(--blue--color);
+    color: var(--red--color);
+    font-weight: 400;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 00.5rem;
+    max-width: 160px;
+}
+.btn .bx{
+    padding: 4px;
+    background: var(--blue--color);
+    color: var(--red--color);
+    border-radius: 1rem;
+    font-size: 20px;
+    margin: auto;
+
+}
+.btn:hover {
+    background: var(--light--blue--color);
+    transition: 0.2s ease;
+}
+.swiper-button-next{
+    background: url(../img/right\ arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    margin: 20px;
+    
+}
+.swiper-button-next::after{
+    display: none;
+}
+
+.swiper-button-prev{
+    background: url(../img/left\ arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    margin: 20px;
+    
+}
+.swiper-button-prev::after{
+    display: none;
 }
