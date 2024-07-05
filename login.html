@@ -10,34 +10,34 @@
     <script src='js/login.js' defer></script> <!-- defer ensures the script runs after the HTML is loaded -->
 </head>
 <body>
-    <div class="navabar">
-        <form method="post">
-            <div class="imgcontainer">
-                <a href="#" class="logo"><i class='bx bx-laptop'></i>DNDLap</a>
-            </div>
-    
-            <div class="container">
-                <label for="uname"><b>Username</b></label>
-                <input id="name" type="text" placeholder="Enter Username" name="uname" class="input-button" required>
-    
-                <label for="psw"><b>Password</b></label>
-                <input id="pass" type="password" placeholder="Enter Password" name="psw" class="input-button" required>
-                <!--phim in an-->
-                <div>
-                  <button id="login" type="submit" class="login">Login</button>
-                <button id="signin" type="button" class="signin">signin</button>
+    <div>
+        <div class="navabar">
+            <form method="post">
+                <div class="imgcontainer">
+                    <a href="index.html" class="logo"><i class='bx bx-laptop'></i>DNDLap</a>
                 </div>
-    
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-            </div>
-    
-            <div class="container" style="background-color:#f1f1f1">
-                <button id="cancelButton" type="button" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
-            </div>
-        </form>
-    </div>>
+        
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input id="name" type="text" placeholder="Enter Username" name="uname" class="input-button" required>
+        
+                    <label for="psw"><b>Password</b></label>
+                    <input id="pass" type="password" placeholder="Enter Password" name="psw" class="input-button" required>
+                    <!--phim input-->
+                    <div>
+                      <button id="login" type="submit" class="login">Login</button>
+                    <button id="signin" type="button" class="signin">signin</button>
+                    </div>
+        
+                    <label>
+                        <input type="checkbox" name="remember"> Remember me
+                    </label>
+                    <div class="container" style="margin-top: auto;">
+                        <span class="psw"><a href="#">Forgot password?</a></span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
