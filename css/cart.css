@@ -1,7 +1,5 @@
 .cart{
-  width: 80%;
-  padding: 10px;
-  margin: auto;
+  width: 100%;
 
 }
 .hered-cart{
@@ -15,7 +13,7 @@
 .cart-item{
     margin-top: 2rem;
     padding: 1.5rem;
-    background-color: blue;
+    background-color: rgb(102, 102, 231);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +22,14 @@
 .product{
     display: flex;
     align-items: center;
+    gap: 1rem;
 }
+.product .cart-img {
+    width: 10%; /* Hoặc bạn có thể sử dụng một giá trị cố định như 50px */
+    object-fit: contain;/* Đảm bảo hình ảnh không bị biến dạng */
+    position: static;
+}
+
 .hered-cart:only-child{
     width: 33.33%;
 }
