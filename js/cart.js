@@ -22,3 +22,37 @@ function calculateTotal() {
     //xuất ra giá trị vào result
     document.getElementById('result').innerText = total.toFixed(0);
 }
+
+const CartItems = document.querySelector(".cart-items");
+
+
+function displaycart() {
+    const items = JSON.parse(localStorage.getItem("cart"));
+    items.forEach(item => {
+        const cartItem = document.createElement("div");
+        cartItem.className = "cart-item";
+        cartItem.innerHTML = `
+    <div class="cart-id">
+        <p>${item.id}</p>
+    </div>
+    <div class="product">
+        <span class="cart-name">${item.name}</span>
+        <img src="${item.img}" alt="" class="cart-img" />
+    </div>
+    <div id="price" class="cart-price">
+    ${item.price}
+    </div>
+    <div class="cart-number">
+        <input id="number" type="number" class="number-item" value="1"/>
+    </div>
+    <p id="result" class="sum-price"></p>
+    <div>
+        <button>Delete</button>
+    </div>
+        `;
+
+    CartItems.appendChild(cartItem);
+    })
+}
+
+displaycart();
