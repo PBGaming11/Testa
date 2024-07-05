@@ -31,3 +31,7 @@
 .cart-itemt:only-child{
     width: 33.33%;
 }
+.sum-cart{
+    margin-top: 2rem;
+    text-align: right;
+}
